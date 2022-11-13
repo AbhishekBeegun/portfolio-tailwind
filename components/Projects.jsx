@@ -1,7 +1,7 @@
 import React from 'react';
-import Link from 'next/link';
+
 import { urlFor } from '../lib/client';
-import Image from 'next/image';
+
 
 const Projects = ({Projects}) => {
   return (
