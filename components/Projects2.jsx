@@ -7,7 +7,7 @@ const Projects2 = ({Projects2}) => {
     
      
 
-        <section className="relative bg-black h-96 w-full rounded-md">
+        <section className="relative bg-black h-96 w-full rounded-md border">
         <div className="h-full w-full">
           <img className="object-cover h-full w-full opacity-40" 
           src={urlFor(Projects2.image)} alt="" />
@@ -24,7 +24,7 @@ const Projects2 = ({Projects2}) => {
             <h4 className="text-base text-white">{Projects2.tech}
             </h4>
 
-            <div className="h-10 bg-black rounded-3xl flex flex-row justify-evenly items-center">
+            <div className="border h-10 bg-black rounded-3xl flex flex-row justify-evenly items-center">
 
 
               <a href="https://applehomeclone.vercel.app" target={"_blank"} rel="noreferrer"

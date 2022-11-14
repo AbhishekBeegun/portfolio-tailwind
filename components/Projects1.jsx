@@ -7,7 +7,7 @@ const Projects1 = ({Projects1}) => {
     
  
 
-        <section className="relative bg-black h-96 w-full rounded-md">
+        <section className="relative bg-black h-96 w-full rounded-md border">
         <div className="h-full w-full">
           <img className="object-cover h-full w-full opacity-40" 
           src={urlFor(Projects1.image)} alt="" />
@@ -24,7 +24,7 @@ const Projects1 = ({Projects1}) => {
             <h4 className="text-base text-white">{Projects1.tech}
             </h4>
 
-            <div className="h-10 bg-black rounded-3xl flex flex-row justify-evenly items-center">
+            <div className=" border h-10 bg-black rounded-3xl flex flex-row justify-evenly items-center">
 
 
               <a href="https://beegun-designstudio.vercel.app" target={"_blank"} rel="noreferrer"
