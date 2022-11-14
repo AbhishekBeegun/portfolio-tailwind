@@ -24,7 +24,7 @@ const Projects1 = ({Projects1}) => {
             <h4 className="text-base text-white">{Projects1.tech}
             </h4>
 
-            <div className=" border h-10 bg-black rounded-3xl flex flex-row justify-evenly items-center">
+            <div className="h-10 bg-black rounded-3xl flex flex-row justify-evenly items-center">
 
 
               <a href="https://beegun-designstudio.vercel.app" target={"_blank"} rel="noreferrer"
