@@ -53,7 +53,7 @@ const Home = ({bannerData}) => {
     
   
     
-    <main className="h-full p-5 flex flex-col gap-8">
+    <main className="h-full p-5 flex flex-col gap-8 bg-white">
       <Projects Projects={bannerData.length && bannerData[0]}/>
       <Projects1 Projects1={bannerData.length && bannerData[1]}/>
       <Projects2 Projects2={bannerData.length && bannerData[2]}/>
@@ -65,7 +65,7 @@ const Home = ({bannerData}) => {
      {/* {console.log(bannerData)}*/}
     </section>
 
-    <section className="p-5">
+    <section className="p-5 bg-white">
     <Otherprojects/>
       
     </section>
