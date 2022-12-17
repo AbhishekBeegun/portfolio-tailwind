@@ -21,7 +21,7 @@ const Projects2 = ({Projects2}) => {
             </h3>
 
 
-            <h4 className="text-base text-white">{Projects2.tech}
+            <h4 className="text-xl text-white">{Projects2.tech}
             </h4>
 
             <div className="h-10 bg-black rounded-3xl flex flex-row justify-evenly items-center">

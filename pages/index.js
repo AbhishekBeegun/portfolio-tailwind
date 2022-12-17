@@ -9,6 +9,7 @@ import Projects2 from '../components/Projects2';
 import Otherprojects from '../components/Otherprojects';
 import About from '../components/About';
 import Footer from '../components/Footer';
+import Projects3 from '../components/Projects3';
 
 const Home = ({bannerData}) => {
   
@@ -54,15 +55,18 @@ const Home = ({bannerData}) => {
   
     
     <main className="h-full p-5 flex flex-col gap-8 bg-white">
-      <Projects Projects={bannerData.length && bannerData[0]}/>
-      <Projects1 Projects1={bannerData.length && bannerData[1]}/>
-      <Projects2 Projects2={bannerData.length && bannerData[2]}/>
+      <Projects3 Projects3={bannerData.length && bannerData[0]}/>
+      <Projects Projects={bannerData.length && bannerData[1]}/>
+      <Projects2 Projects2={bannerData.length && bannerData[3]}/>
+      <Projects1 Projects1={bannerData.length && bannerData[2]}/>
+      
+      
     </main>
 
     <section className="h-full">
     <About/>
     
-     {/* {console.log(bannerData)}*/}
+     {console.log(bannerData[3])}
     </section>
 
     <section className="p-5 bg-white">
