@@ -54,7 +54,7 @@ const Home = ({bannerData}) => {
     
   
     
-    <main className="h-full p-5 flex flex-col gap-8 bg-white">
+    <main className="h-full flex flex-col gap-8 p-5 bg-white">
       <Projects3 Projects3={bannerData.length && bannerData[0]}/>
       <Projects Projects={bannerData.length && bannerData[1]}/>
       <Projects2 Projects2={bannerData.length && bannerData[3]}/>

@@ -17,7 +17,7 @@ function Footer() {
         </button>
       
 
-      <h6 className="text-base">Abhishek beegun &#169; 2022</h6>
+      <h6 className="text-base">Abhishek beegun &#169; 2023</h6>
     </div>
   )
 }
