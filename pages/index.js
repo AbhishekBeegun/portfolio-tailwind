@@ -58,7 +58,7 @@ const Home = ({bannerData}) => {
       <Projects3 Projects3={bannerData.length && bannerData[0]}/>
       <Projects Projects={bannerData.length && bannerData[1]}/>
       <Projects2 Projects2={bannerData.length && bannerData[3]}/>
-      <Projects1 Projects1={bannerData.length && bannerData[2]}/>
+      {/*<Projects1 Projects1={bannerData.length && bannerData[2]}/>*/}
       
       
     </main>
