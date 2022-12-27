@@ -4,7 +4,7 @@ import { gsap } from 'gsap';
 
 
 import Projects from '../components/Projects';
-import Projects1 from '../components/Projects1';
+{/*import Projects1 from '../components/Projects1';*/}
 import Projects2 from '../components/Projects2';
 import Otherprojects from '../components/Otherprojects';
 import About from '../components/About';
