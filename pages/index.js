@@ -93,7 +93,7 @@ const Home = ({bannerData}) => {
           
   
     
-    <main className="h-full flex flex-col gap-8 p-5 bg-white">
+    <main className="h-full flex flex-col justify-center items-center gap-8 px-2 py-2 lg:p-5 bg-white">
       <Projects3 Projects3={bannerData.length && bannerData[0]}/>
       <Projects Projects={bannerData.length && bannerData[1]}/>
       <Projects2 Projects2={bannerData.length && bannerData[3]}/>
