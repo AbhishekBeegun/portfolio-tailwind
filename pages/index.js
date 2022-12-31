@@ -1,8 +1,6 @@
 import React,{useRef,useEffect}  from 'react';
 import {client} from '../lib/client';
 import { gsap } from 'gsap';
-
-
 import Projects from '../components/Projects';
 {/*import Projects1 from '../components/Projects1';*/}
 import Projects2 from '../components/Projects2';
@@ -11,7 +9,10 @@ import About from '../components/About';
 import Footer from '../components/Footer';
 import Projects3 from '../components/Projects3';
 
+
+
 const Home = ({bannerData}) => {
+  
   
   let tl = gsap.timeline();
 
@@ -21,6 +22,40 @@ const Home = ({bannerData}) => {
   let posY = 0;
   let mouseX = 0;
   let mouseY = 0;
+
+  //For Install to Home Screen
+  useEffect(()=>{
+
+    let deferredPrompt;
+    const addBtn = document.querySelector(".add-button");
+    addBtn.style.display = "none";
+
+    window.addEventListener("beforeinstallprompt", (e) => {
+      // Prevent Chrome 67 and earlier from automatically showing the prompt
+      e.preventDefault();
+      // Stash the event so it can be triggered later.
+      deferredPrompt = e;
+      // Update UI to notify the user they can add to home screen
+      addBtn.style.display = "block";
+    
+      addBtn.addEventListener("click", (e) => {
+        // hide our user interface that shows our A2HS button
+        addBtn.style.display = "none";
+        // Show the prompt
+        deferredPrompt.prompt();
+        // Wait for the user to respond to the prompt
+        deferredPrompt.userChoice.then((choiceResult) => {
+          if (choiceResult.outcome === "accepted") {
+            console.log("User accepted the A2HS prompt");
+          } else {
+            console.log("User dismissed the A2HS prompt");
+          }
+          deferredPrompt = null;
+        });
+      });
+    });
+    
+  })
 
 
 
@@ -51,6 +86,9 @@ const Home = ({bannerData}) => {
         <title>BEEGUN TAILWIND PORTFOLIO</title>
         <meta name="description" content="Beegun portfolio using Tailwind and SANITY GSAP" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="manifest" href="pwa.webmanifest"/>
+        <button className="add-button">Add to home screen</button>
+
     
   
     

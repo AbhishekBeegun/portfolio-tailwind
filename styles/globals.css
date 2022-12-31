@@ -22,6 +22,14 @@ a {
   box-sizing: border-box;
 }
 
+.add-button {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  padding: 100rem;
+}
+
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -31,3 +39,4 @@ a {
     background: black;
   }
 }
+
