@@ -23,7 +23,11 @@ const Home = ({bannerData}) => {
   let mouseX = 0;
   let mouseY = 0;
 
-  //For Install to Home Screen
+ {/*For Install to Home Screen
+
+ <link rel="manifest" href="pwa.webmanifest"/>
+        <button className="add-button">Add to home screen</button>
+
   useEffect(()=>{
 
     let deferredPrompt;
@@ -56,7 +60,7 @@ const Home = ({bannerData}) => {
     });
     
   })
-
+*/}
 
 
 
@@ -86,10 +90,7 @@ const Home = ({bannerData}) => {
         <title>BEEGUN TAILWIND PORTFOLIO</title>
         <meta name="description" content="Beegun portfolio using Tailwind and SANITY GSAP" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="manifest" href="pwa.webmanifest"/>
-        <button className="add-button">Add to home screen</button>
-
-    
+          
   
     
     <main className="h-full flex flex-col gap-8 p-5 bg-white">
