@@ -38,7 +38,7 @@ const Home = ({bannerData}) => {
       // Update UI to notify the user they can add to home screen
       addBtn.style.display = "block";
     
-      addBtn.addEventListener("click", (e) => {
+      addBtn.addEventListener("click", (deferredPrompt) => {
         // hide our user interface that shows our A2HS button
         addBtn.style.display = "none";
         // Show the prompt
