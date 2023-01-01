@@ -23,7 +23,7 @@ const Home = ({bannerData}) => {
   let mouseX = 0;
   let mouseY = 0;
 
- {/*For Install to Home Screen
+ {/*For Install to Home Screen currently not working 2 chek
 
  <link rel="manifest" href="pwa.webmanifest"/>
         <button className="add-button">Add to home screen</button>
