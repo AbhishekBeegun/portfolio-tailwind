@@ -5,7 +5,7 @@ function Otherprojects() {
 
     <div className="h-full flex flex-col gap-5 flex-wrap lg:grid grid-cols-2">
 
-      <h2 className="text-3xl flex justify-center items-center text-black">Other projects</h2>
+      <h2 className="text-3xl lg:flex justify-center items-center text-black hidden">Other projects</h2>
       
       
       <a href="https://supabase-booksummery.vercel.app" target={"_blank"} rel="noreferrer"
