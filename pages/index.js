@@ -115,7 +115,7 @@ const Home = ({bannerData}) => {
     <Footer/>
 
     <div ref={el => cursor = el} 
-    className="absolute bg-disaster bg-contain bg-center bg-no-repeat mix-blend-difference rounded-full w-[100px] h-[50px] select-none z-50 translate-x-20 translate-y-20 opacity-0 md:opacity-100 lg:opacity-100">
+    className="hidden lg:block absolute bg-disaster bg-contain bg-center bg-no-repeat mix-blend-difference rounded-full w-[100px] h-[50px] select-none z-50 translate-x-20 translate-y-20 opacity-0 md:opacity-100 lg:opacity-100">
       </div>    
     </>
   )
