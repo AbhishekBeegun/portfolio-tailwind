@@ -142,8 +142,8 @@ function About() {
 
      <div className="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
      <span className="text-4xl mx-4 text-violet-500">Currently trying to understand :</span>
-      {array.map(arr => 
-      <span className="text-4xl mx-4">{arr}</span>
+      {array.map((arr,index) => 
+      <span key={index} className="text-4xl mx-4">{arr}</span>
       )}
      </div>
     </section> 
